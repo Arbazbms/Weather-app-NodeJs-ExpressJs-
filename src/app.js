@@ -6,6 +6,8 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT|| 8000;
+
 
 publicDirectoryPath = path.join(__dirname, '../public')
 app.use(express.static(publicDirectoryPath))
@@ -123,7 +125,8 @@ app.get('/help/*', (req, res) => {
     res.send('inside help any page!')
 })
 
-app.listen(8000,() => {
-    console.log('Server is Up on Port 8000');
+
+app.listen(port,() => {
+    console.log('Server is Up on Port' + port);
 })
 
