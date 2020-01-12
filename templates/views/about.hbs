@@ -2,23 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" href="/img/weather.png">
-    <title>about</title>
+  <link rel="icon" href="/img/weather.png">
+  <title>about</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
 <body style="background-color: #0f4c75;">
-     {{>header}}
-    
+  {{>header}}
+
   <!--  <img class="portrait" src="img/Arbazz.jpg" alt="myPic" />-->
 
-<table class="table table-dark table-hover" style="width:610px; margin-left:28px;">
+  <table class="table table-dark table-hover" style="max-width:none; margin-left:28px;  margin-right:25px; ">
     <thead>
       <tr>
         <th>Name</th>
@@ -30,12 +40,12 @@
       <tr>
         <td>API's used</td>
         <td>DarkSky & MapBox</td>
-        <td><a href="https://darksky.net/dev">DarkSky_Link</a>  <a href="https://mapbox.com">Mapbox_link</a></td>
+        <td><a href="https://darksky.net/dev">DarkSky_Link</a> <a href="https://mapbox.com">Mapbox_link</a></td>
       </tr>
       <tr>
         <td>tech Stack</td>
         <td>NodeJs & ExpressJs</td>
-        <td><img src="/img/node.png" style="width:52px;"/>&nbsp;<img src="/img/express.png" style="width:60px;"/></td>
+        <td><img src="/img/node.png" style="width:52px;" />&nbsp;<img src="/img/express.png" style="width:60px;" /></td>
       </tr>
       <tr>
         <th>Contact</th>
@@ -45,7 +55,7 @@
     </tbody>
   </table>
 
-    {{>footer}}
+  {{>footer}}
 </body>
 
 </html>
